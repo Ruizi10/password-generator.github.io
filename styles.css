@@ -44,16 +44,24 @@ h1{
     font-size: 1.2rem;
     color: #e741ce;
 }
+
 .length-selector{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: rgb(244,243,243);
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
+
 .length-selector label{
     margin-right: 10px;
-    color:#333;
+    color: #333;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 #generate-btn{
@@ -71,9 +79,18 @@ h1{
     transform: scale(1.05);
 }
 
-#password-length{
-    padding:5px;
+#password-length {
+    padding: 5px;
     width: 60px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: white;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#password-length:focus {
+    border-color: #c646f8;
+    box-shadow: 0 0 5px rgba(198, 70, 248, 0.5);
 }
